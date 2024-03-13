@@ -1,4 +1,8 @@
 public class CONSTANT {
+
+    public CONSTANT(){
+        
+    }
     protected final String LOADING_MESSEGE = "Data is loading data ...";
     protected final String INPUT_FILE_NAME = "student.text";
     protected final String lOADED_MESSEGE = "Data Loaded Successfully.";
@@ -7,4 +11,9 @@ public class CONSTANT {
     protected final String FOUND_MESSEGE = "We found it!";
     protected final String DATE_FORMAT = "Loading data ...";
     protected final String UPDATE_MESSEGE = "\n" + " List last updated on ";
+    protected final String LITARALES_A = "a";
+    protected final String LITARALES_R = "r";
+    protected final String LITARALES_ADD = "+";
+    protected final String LITARALES_SEARCH = "?";
+    protected final String LITARALES_COUNT = "c";
 }

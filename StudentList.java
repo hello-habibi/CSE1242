@@ -40,7 +40,7 @@ public class StudentList {
 		// Check arguments
 		while (isProgramRunnable) {
 			isProgramRunnable = false;
-			if ( args[0].equals("a")) {
+			if ( args[0].equals(constants.LITARALES_A)) {
 				System.out.println(constants.LOADING_MESSEGE);
 				try {
 					String inputString = readFile(constants.INPUT_FILE_NAME);
@@ -49,7 +49,7 @@ public class StudentList {
 				}
 				System.out.println(constants.lOADED_MESSEGE);
 	
-			} else if (args[0].equals("r")) {
+			} else if (args[0].equals(constants.LITARALES_R)) {
 				System.out.println(constants.LOADING_MESSEGE);
 				try {	
 					String inpuString = readFile(constants.INPUT_FILE_NAME);
@@ -62,7 +62,7 @@ public class StudentList {
 				} catch (Exception e) {
 				}
 				System.out.println(constants.lOADED_MESSEGE);
-			} else if (args[0].contains("+")) {
+			} else if (args[0].contains(constants.LITARALES_ADD)) {
 				System.out.println(constants.LOADING_MESSEGE);
 				try {
 					BufferedWriter writer = new BufferedWriter(
@@ -79,7 +79,7 @@ public class StudentList {
 				}
 	
 				System.out.println(constants.lOADED_MESSEGE);
-			} else if (args[0].contains("?")) {
+			} else if (args[0].contains(constants.LITARALES_SEARCH)) {
 				System.out.println(constants.LOADING_MESSEGE);
 				try {
 					String inpuString = readFile(constants.INPUT_FILE_NAME);
@@ -95,7 +95,7 @@ public class StudentList {
 				} catch (Exception e) {
 				}
 				System.out.println(constants.lOADED_MESSEGE);
-			} else if (args[0].contains("c")) {
+			} else if (args[0].contains(constants.LITARALES_COUNT)) {
 				System.out.println(constants.LOADING_MESSEGE);
 				try {
 					String inpuString = readFile(constants.INPUT_FILE_NAME);
